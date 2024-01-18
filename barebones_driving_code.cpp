@@ -61,13 +61,13 @@ void movementCallback(){
 
     if (speed != 0){
         // Set one side to speed while setting other side to percentage of speed var based on turn direction
-        
+        int ispeed = (int) speed;
         if (turn > 0){
-            Motor1.setVelocity(moterOneMult*int(speed)                       , percent);
+            Motor1.setVelocity(moterOneMult*ispeed                           , percent);
             Motor2.setVelocity(moterTwoMult*int(speed * (1- turn/100))       , percent);
         }else{
-            Motor1.setVelocity(moterOneMult*int(speed * (1- fabs(turn)/100)) , percent);
-            Motor2.setVelocity(moterTwoMult*int(speed)                       , percent);
+            Motor1.setVelocity(moterOneMult*((int)(speed * (1- fabs(turn)/100))) , percent);
+            Motor2.setVelocity(moterTwoMult*ispeed                           , percent);
           }
     }else{   
         // use opposing motors to turn without forward momentum
