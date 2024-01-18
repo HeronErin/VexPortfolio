@@ -1,3 +1,6 @@
 [submodule "VexVideoPlayer"]
 	path = VexVideoPlayer
 	url = https://github.com/HeronErin/VexVideoPlayer.git
+[submodule "VEXAPI"]
+	path = VEXAPI
+	url = https://github.com/cetio/VEXAPI

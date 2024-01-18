@@ -1,0 +1,21 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Pack_to_v5_python",
+            "type": "shell",
+            "command": "C:/Users/void/AppData/Local/Programs/Python/Python311/python.exe",
+            "args": [
+                "C:\\Users\\void\\Documents\\vexPacker\\build.py",
+                "${cwd}"
+            ],
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
